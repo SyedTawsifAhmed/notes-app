@@ -74,7 +74,7 @@ A simple backend for an application that saves notes, and filters them with tags
 - **Endpoint:** `GET /tag/`
 - **Description:** Finds all tags associated with the user
 - **Response Body:**
-  ```json
+  ```
   [
     {
       "_id": "ObjectId",
@@ -129,7 +129,7 @@ A simple backend for an application that saves notes, and filters them with tags
 - **Endpoint:** `GET /note/`
 - **Description:** Finds all notes associated with the user
 - **Response Body:**
-  ```json
+  ```
   [
     {
       "_id": "ObjectId",
