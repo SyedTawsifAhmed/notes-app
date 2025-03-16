@@ -6,7 +6,7 @@ A simple backend for an application that saves notes, and filters them with tags
 
 # API Routes
 - ```"ObjectId"``` example: '65f3a9d2d1c7f1001c3e4567'
-- ```Date``` example: '2025-03-16T12:34:56.789Z'
+- ```"Date"``` example: '2025-03-16T12:34:56.789Z'
 - All requests in Tags and Notes require a valid session cookie. Ensure the client includes cookies in requests.
 ## Base URL
 - http://localhost:5000/api
