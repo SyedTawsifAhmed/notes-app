@@ -40,7 +40,7 @@ export const login = async (
     }
     const token = jwt.sign({ userId: user._id }, config.javaWebToken, { expiresIn: '1h' });
     setCookie(res, token);
-    res.status(200).send('Successfully logged in');
+    res.status(200).send({ token });
   } catch (error) {
     res.status(400).send(`Could not login: ${error}`);
   }
