@@ -1,5 +1,47 @@
 # Notes App
-A simple backend for an application that saves notes, and filters them with tags
+This is a simple backend for a Notes App built with TypeScript, Express.js, and MongoDB. It's designed to demonstrate CRUD operations. Users can create, read, update, and delete notes while organizing them with tags for better categorization. The app includes authentication and ensures efficient handling of deleted tags by resetting related notes to a default 'None' tag.
+
+# Features
+- User authentication
+- Create, read, update, and delete notes
+- Assign and manage tags for notes
+- Automatic reset of tags to 'None' when deleted
+- RESTful API design
+
+# Technologies Used
+- Backend: [Node.js](https://nodejs.org/en), [Express.js](https://expressjs.com/), [TypeScript](https://www.typescriptlang.org/docs/), [ESlint](https://eslint.org/docs/latest/), [Prettier](https://prettier.io/docs/)
+- Database: [MongoDB](https://www.mongodb.com/docs/manual/installation/), [Mongoose](https://mongoosejs.com/docs/api/model.html)
+- Authentication: [JSON Web Tokens (JWT)](https://jwt.io/), [bcrypt](https://www.npmjs.com/package/bcryptjs)
+- Validation: [Zod](https://zod.dev/)
+- Testing: [Postman](https://www.postman.com/) (for API testing)
+
+# Local Installation and Setup
+## Prerequisites
+- Install the latest version of [Node.js](https://nodejs.org/en)
+- Create a [MongoDB](https://www.mongodb.com/docs/manual/installation/) database 
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/notes-app-backend.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd notes-app-backend
+   ```
+4. Install dependencies:
+   ```sh
+   npm install
+   ```
+5. Set up environment variables (create a .env file):
+   ```
+   PORT=5000
+   DATABASE_URL=mongodb_connection_string
+   JWT_SECRET=secret_key
+   ```
+6. Run the development server:
+   ```sh
+   npm run dev
+   ```
 
 ## API demonstration and code for Notes App Backend
 [![API demonstration and code for Notes App Backend](http://img.youtube.com/vi/ogRKo3DEPqc/0.jpg)](https://youtu.be/ogRKo3DEPqc)
