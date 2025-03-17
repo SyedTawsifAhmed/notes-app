@@ -1,11 +1,11 @@
 # Notes App
-This is a simple backend for a Notes App built with TypeScript, Express.js, and MongoDB. It's designed to demonstrate CRUD operations. Users can create, read, update, and delete notes while organizing them with tags for better categorization. The app includes authentication and ensures efficient handling of deleted tags by resetting related notes to a default 'None' tag.
+This is a simple backend for a Notes App built with TypeScript, Express.js, and MongoDB. It's designed to demonstrate CRUD operations. Users can create, read, update, and delete notes while organizing them with tags for better categorization. The app includes authentication and ensures efficient handling of deleted tags by removing the references of it on associated notes.
 
 # Features
 - User authentication
 - Create, read, update, and delete notes
 - Assign and manage tags for notes
-- Automatic reset of tags to 'None' when deleted
+- Automatic reset of tags to 'null' when deleted
 - RESTful API design
 
 # Technologies Used
